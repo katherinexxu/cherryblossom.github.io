@@ -1,0 +1,211 @@
+html{
+  width:1440px;
+  heighit:auto;
+}
+
+body{
+  background-image: linear-gradient(120deg, #fad0c4 0%, #ffd1ff 100%);
+}
+
+
+a{
+text-decoration: none;
+color:hotpink;
+}
+
+a:visited{
+text-decoration: none;
+color:hotpink;
+}
+
+.container{
+  position:absolute;
+width: 956px;
+height: 405px;
+left: 520px;
+top: 290px;
+
+font-family: Helvetica;
+font-style: normal;
+font-weight: normal;
+font-size: 150px;
+line-height: 230px;
+animation: floating 6s ease-in-out infinite;
+  filter: blur(.5rem);
+
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
+  @keyframes floating {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+ .container:hover{
+      filter: none;
+      animation-play-state: paused;
+
+}
+
+
+@keyframes glow{
+  0% {background: rgba(255, 0, 50,0.7); }
+  50% {background:rgba(255, 183, 197,0.85); }
+  100% {background: rgba(255, 0, 50,0.7); }
+}
+
+@keyframes bug1 {
+  0% {left: 60%; top: 63%;}
+  50% {left: 10%; top: 45%;}
+  100% {left: 60%; top: 63%;}
+}
+
+@keyframes bug2 {
+  0% {left: 13%; top: 3%;}
+  50% {left: 20%; top: 10;}
+  100% {left: 13%; top: 3%;}
+}
+
+@keyframes bug3 {
+  0% {left: 89%; top: 3%;}
+  50% {left: 90%; top: 75%;}
+  100% {left: 89%; top: 3%;}
+}
+
+@keyframes bug4 {
+  0% {left: 22%; top: 40%;}
+  50% {left: 80%; top: 25%;}
+  100% {left: 22%; top: 40%;}
+}
+
+@keyframes bug5 {
+  0% {left: 68%; top: 50%;}
+  50% {left: 15%; top: 60%;}
+  100% {left: 68%; top: 50%;}
+}
+@keyframes bug6 {
+  0% {left: 55%; top: 3%;}
+  50% {left: 5%; top: 45%;}
+  100% {left: 55%; top: 3%;}
+}
+@keyframes bug7 {
+  0% {left: 3%; top: 40%;}
+  50% {left: 78%; top: 43%;}
+  100% {left: 3%; top: 40%;}
+}
+@keyframes bug8 {
+  0% {left: 30%; top: 90%;}
+  50% {left: 45%; top: 44%;}
+  100% {left: 30%; top: 90%;}
+}
+.firefly{
+  position:absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: rgba(136,106,55,0.05);
+  border-radius: 50%;
+  filter: blur(3px);
+  /* animation:glow 4s ease-in-out infinite; */
+}
+
+.firefly:hover {
+  animation-play-state: running, paused; 
+  cursor: grabbing;
+}
+
+.firefly:nth-child(1){
+  left:60%;
+  top:63%;
+  animation-name: glow, bug1; 
+  animation-duration: 4s, 18s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count:infinite, infinite; 
+  animation-delay: 4s, 2s;
+  
+}
+
+.firefly:nth-child(2){
+  left:13%;
+  top:3%;
+  animation-name: glow, bug2; 
+  animation-duration: 4s, 23s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count:infinite, infinite;
+  animation-delay: 1s, 8s;
+}
+
+.firefly:nth-child(3){
+  left:89%;
+  top:3%;
+  animation-name: glow, bug3; 
+  animation-duration: 4s, 23s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 3s, 4s;
+}
+
+.firefly:nth-child(4){
+  left:22%;
+  top:40%;
+  animation-name: glow, bug4; 
+  animation-duration: 4s, 23s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 1s, 3s;
+}
+
+.firefly:nth-child(5){
+  left:68%;
+  top:50%;
+  animation-name: glow, bug5; 
+  animation-duration: 4s, 23s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 9s, 3s;
+}
+.firefly:nth-child(6){
+  left:55%;
+  top:3%;
+  animation-name: glow, bug6; 
+  animation-duration: 4s, 23s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 1s, 3s;
+}
+.firefly:nth-child(7){
+  left:3%;
+  top:40%;
+  animation-name: glow, bug7; 
+  animation-duration: 4s, 23s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 3s, 3s;
+}
+.firefly:nth-child(8){
+  left:30%;
+  top:90%;
+  animation-name: glow, bug8; 
+  animation-duration: 4s, 23s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 2s, 3s;
+}
