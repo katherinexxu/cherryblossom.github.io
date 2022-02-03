@@ -30,7 +30,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 150px;
 line-height: 230px;
-animation: floating 6s ease-in-out infinite;
+animation: floating 2s ease-in-out infinite;
   filter: blur(.5rem);
 
 }
